@@ -1,0 +1,1115 @@
+@font-face {
+  font-family: "lsicon";
+  src: url("#{$get-path-to-fonts}/lsicons/lsicon-2x.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lsicon";
+  src: url("#{$get-path-to-fonts}/lsicons/lsicon-2x.eot");
+  src: url("#{$get-path-to-fonts}/lsicons/lsicon-2x.eot?#iefix") format("embedded-opentype"),
+  url("#{$get-path-to-fonts}/lsicons/lsicon-2x.ttf") format("truetype"),
+  url("#{$get-path-to-fonts}/lsicons/lsicon-2x.woff") format("woff"),
+  url("#{$get-path-to-fonts}/lsicons/lsicon-2x.svg#lsicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="icon-lsicon"], [class*="icon-weather"], [class*="icon-category"], [class*="icon-general"], [class*="icon-facility"] {
+  font-family: "lsicon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 32px;
+  //height:28px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    position: relative;
+  }
+}
+
+[class*="icon-lsicon"].smaller, [class*="icon-weather"].smaller, [class*="icon-category"].smaller,
+[class*="icon-general"].smaller, [class*="icon-facility"].smaller {
+  font-size: 20px;
+  &.inline {
+    height: 20px;
+    &:before {
+      top: 6px;
+    }
+  }
+}
+
+[class*="icon-lsicon"].small, [class*="icon-weather"].small, [class*="icon-category"].small,
+[class*="icon-general"].small, [class*="icon-facility"].small {
+  font-size: 28px;
+}
+
+[class*="icon-lsicon"].large, [class*="icon-weather"].large, [class*="icon-category"].large,
+[class*="icon-general"].large, [class*="icon-facility"].large {
+  font-size: 42px;
+}
+
+[class*="icon-lsicon"].inline, [class*="icon-weather"].inline, [class*="icon-category"].inline,
+[class*="icon-general"].inline, [class*="icon-facility"].inline {
+  &:before {
+    position: relative;
+    top: 11px;
+  }
+}
+
+.icon-categorysoccer:before {
+  content: '\e600';
+}
+
+.icon-categorybasketball:before {
+  content: '\e601';
+}
+
+.icon-categoryhockey:before {
+  content: '\e602';
+}
+
+.icon-generalwebsite:before {
+  content: '\e603';
+}
+
+.icon-categoryrugbyleague:before {
+  content: '\e604';
+}
+
+.icon-categoryafl:before {
+  content: '\e605';
+}
+
+.icon-categoryrugbyunion:before {
+  content: '\e606';
+}
+
+.icon-categorynetball:before {
+  content: '\e607';
+}
+
+.icon-categorycricket:before {
+  content: '\e608';
+}
+
+.icon-categorypolicestations:before {
+  content: '\e609';
+}
+
+.icon-categoryboatramps:before {
+  content: '\e610';
+}
+
+.icon-categorycinema:before {
+  content: '\e611';
+}
+
+.icon-categoryflorists:before {
+  content: '\e612';
+}
+
+.icon-categorycafes:before {
+  content: '\e613';
+}
+
+.icon-categorychemists:before {
+  content: '\e614';
+}
+
+.icon-categoryhomefurnishings:before {
+  content: '\e615';
+}
+
+.icon-categoryfastfoodoutlets:before {
+  content: '\e616';
+}
+
+.icon-categoryatm:before {
+  content: '\e617';
+}
+
+.icon-categoryairports:before {
+  content: '\e618';
+}
+
+.icon-categoryrailway:before {
+  content: '\e619';
+}
+
+.icon-generalsearchxl:before {
+  content: '\e620';
+}
+
+.icon-categoryagedcare:before {
+  content: '\e621';
+}
+
+.icon-facilitylandingpontoon:before {
+  content: '\e622';
+}
+
+.icon-generalrefine:before {
+  content: '\e623';
+}
+
+.icon-generalshare:before {
+  content: '\e624';
+}
+
+.icon-categoryengineering:before {
+  content: '\e625';
+}
+
+.icon-categoryhomeimlookingfor:before {
+  content: '\e626';
+}
+
+.icon-categorytrucks:before {
+  content: '\e627';
+}
+
+.icon-categoryconcrete:before {
+  content: '\e628';
+}
+
+.icon-facilitymotorlessvessels:before {
+  content: '\e629';
+}
+
+.icon-facilitylowtiderestricted:before {
+  content: '\e630';
+}
+
+.icon-facilityuserestrictedinwetseason:before {
+  content: '\e631';
+}
+
+.icon-facilityoverheadpowerlinedanger:before {
+  content: '\e632';
+}
+
+.icon-facilitybabychange:before {
+  content: '\e633';
+}
+
+.icon-facilitysanitarydisposal:before {
+  content: '\e634';
+}
+
+.icon-facilityshopsnearby:before {
+  content: '\e635';
+}
+
+.icon-facilitypatrolledbeach:before {
+  content: '\e636';
+}
+
+.icon-facilitylighting:before {
+  content: '\e637';
+}
+
+.icon-facilitysandybeachadjecent:before {
+  content: '\e638';
+}
+
+.icon-facilitykeyrequired:before {
+  content: '\e639';
+}
+
+.icon-facilityparking:before {
+  content: '\e640';
+}
+
+.icon-facilityshowers:before {
+  content: '\e641';
+}
+
+.icon-facilitytoilettype:before {
+  content: '\e642';
+}
+
+.icon-facilitysharpsdisposal:before {
+  content: '\e643';
+}
+
+.icon-weathermoon6:before {
+  content: '\e644';
+}
+
+.icon-weathermoon5:before {
+  content: '\e645';
+}
+
+.icon-weathermoon4:before {
+  content: '\e646';
+}
+
+.icon-weathermoon7:before {
+  content: '\e647';
+}
+
+.icon-weathermoon3:before {
+  content: '\e648';
+}
+
+.icon-weathermoon8:before {
+  content: '\e649';
+}
+
+.icon-weathermoon2:before {
+  content: '\e650';
+}
+
+.icon-facilitysort:before {
+  content: '\e651';
+}
+
+.icon-weathermoon1:before {
+  content: '\e652';
+}
+
+.icon-facilityaccessible:before {
+  content: '\e653';
+}
+
+.icon-categoryhireeventsandweddings:before {
+  content: '\e654';
+}
+
+.icon-categorygolf:before {
+  content: '\e655';
+}
+
+.icon-categoryclubs:before {
+  content: '\e656';
+}
+
+.icon-categorylocalsportingtimetables:before {
+  content: '\e657';
+}
+
+.icon-categoryoutdoorproducts:before {
+  content: '\e658';
+}
+
+.icon-categoryequipmentandsuppliesfoodanddrink:before {
+  content: '\e659';
+}
+
+.icon-categorybottleshops:before {
+  content: '\e660';
+}
+
+.icon-categoryeventsandweddings:before {
+  content: '\e661';
+}
+
+.icon-categorybusinessservices:before {
+  content: '\e662';
+}
+
+.icon-categoryhairandbeauty:before {
+  content: '\e663';
+}
+
+.icon-categoryeducation:before {
+  content: '\e664';
+}
+
+.icon-categorytravel:before {
+  content: '\e665';
+}
+
+.icon-categorysportsandleisure:before {
+  content: '\e666';
+}
+
+.icon-categoryshoppingcentres:before {
+  content: '\e667';
+}
+
+.icon-categorynewsagents:before {
+  content: '\e668';
+}
+
+.icon-categorytradespeople:before {
+  content: '\e669';
+}
+
+.icon-categoryautomotive:before {
+  content: '\e670';
+}
+
+.icon-categorytyres:before {
+  content: '\e671';
+}
+
+.icon-categoryequestrian:before {
+  content: '\e672';
+}
+
+.icon-category24hourservices:before {
+  content: '\e673';
+}
+
+.icon-categorybuildingsupplies:before {
+  content: '\e674';
+}
+
+.icon-categoryhomeservices:before {
+  content: '\e675';
+}
+
+.icon-generalmappin:before {
+  content: '\e676';
+}
+
+.icon-categoryproperty:before {
+  content: '\e677';
+}
+
+.icon-categorysecurity:before {
+  content: '\e678';
+}
+
+.icon-categoryhirebuildingsupplies:before {
+  content: '\e679';
+}
+
+.icon-categoryglass:before {
+  content: '\e680';
+}
+
+.icon-categoryairconditioning:before {
+  content: '\e681';
+}
+
+.icon-categorybed:before {
+  content: '\e682';
+}
+
+.icon-categoryinsurance:before {
+  content: '\e683';
+}
+
+.icon-categorycleaners:before {
+  content: '\e684';
+}
+
+.icon-categoryrestaurants:before {
+  content: '\e685';
+}
+
+.icon-categorycookingclass:before {
+  content: '\e686';
+}
+
+.icon-categorymassage:before {
+  content: '\e687';
+}
+
+.icon-categorywindows:before {
+  content: '\e688';
+}
+
+.icon-categoryplaceofworship:before {
+  content: '\e689';
+}
+
+.icon-categoryprofessionalservices:before {
+  content: '\e690';
+}
+
+.icon-categoryorganisations:before {
+  content: '\e691';
+}
+
+.icon-categoryonthego:before {
+  content: '\e692';
+}
+
+.icon-generalgoback:before {
+  content: '\e693';
+}
+
+.icon-categoryplumber:before {
+  content: '\e694';
+}
+
+.icon-categorypestcontrol:before {
+  content: '\e695';
+}
+
+.icon-categoryelectrician:before {
+  content: '\e696';
+}
+
+.icon-categoryblinds:before {
+  content: '\e697';
+}
+
+.icon-facilityskatepark:before {
+  content: '\e698';
+}
+
+.icon-facilitybarbecues:before {
+  content: '\e699';
+}
+
+.icon-facilityflorafauna:before {
+  content: '\e700';
+}
+
+.icon-facilitysportingfacilities:before {
+  content: '\e701';
+}
+
+.icon-facilitycamping:before {
+  content: '\e702';
+}
+
+.icon-facilityplayground:before {
+  content: '\e703';
+}
+
+.icon-facilitypicnicfacilities:before {
+  content: '\e704';
+}
+
+.icon-facilitytoilets:before {
+  content: '\e705';
+}
+
+.icon-weatherfrostsun:before {
+  content: '\e706';
+}
+
+.icon-weatherfogsun:before {
+  content: '\e707';
+}
+
+.icon-weatherrainsnow:before {
+  content: '\e708';
+}
+
+.icon-weatherclouds:before {
+  content: '\e709';
+}
+
+.icon-weathercloudsrain:before {
+  content: '\e710';
+}
+
+.icon-weathercloudssnow:before {
+  content: '\e711';
+}
+
+.icon-weatherstorm:before {
+  content: '\e712';
+}
+
+.icon-weathercloudswindsnow:before {
+  content: '\e713';
+}
+
+.icon-weatherfrost:before {
+  content: '\e714';
+}
+
+.icon-weatherfog:before {
+  content: '\e715';
+}
+
+.icon-weathercloudswindrain:before {
+  content: '\e716';
+}
+
+.icon-weathersunclouds:before {
+  content: '\e717';
+}
+
+.icon-weathercloudswind:before {
+  content: '\e718';
+}
+
+.icon-weathersuncloudsrain:before {
+  content: '\e719';
+}
+
+.icon-weathersun:before {
+  content: '\e720';
+}
+
+.icon-generalsaved:before {
+  content: '\e721';
+}
+
+.icon-generalwave:before {
+  content: '\e722';
+}
+
+.icon-generaledit:before {
+  content: '\e723';
+}
+
+.icon-generalwind:before {
+  content: '\e724';
+}
+
+.icon-generalstarminihalfright:before {
+  content: '\e725';
+}
+
+.icon-generalstarlhalf:before {
+  content: '\e726';
+}
+
+.icon-generalflagmini:before {
+  content: '\e727';
+}
+
+.icon-generaldislikemini:before {
+  content: '\e728';
+}
+
+.icon-generallikemini:before {
+  content: '\e729';
+}
+
+.icon-generalstarlarge:before {
+  content: '\e730';
+}
+
+.icon-generalstarlargehalf:before {
+  content: '\e731';
+}
+
+.icon-generalstarmini:before {
+  content: '\e732';
+}
+
+.icon-generalstarminihalf:before {
+  content: '\e733';
+}
+
+.icon-generaladd:before {
+  content: '\e734';
+}
+
+.icon-generaldelete:before {
+  content: '\e735';
+}
+
+.icon-generalcalllarge:before {
+  content: '\e736';
+}
+
+.icon-generalcurrentlocationlarge:before {
+  content: '\e737';
+}
+
+.icon-generalsearchlarge:before {
+  content: '\e738';
+}
+
+.icon-categorynearme:before {
+  content: '\e739';
+}
+
+.icon-generalcaretleftlarge:before {
+  content: '\e740';
+}
+
+.icon-generalcaretuplarge:before {
+  content: '\e741';
+}
+
+.icon-generalcaretrightlarge:before {
+  content: '\e742';
+}
+
+.icon-generalcaretdownlarge:before {
+  content: '\e743';
+}
+
+.icon-generalcaretleftmedium:before {
+  content: '\e744';
+}
+
+.icon-generalcaretupmedium:before {
+  content: '\e745';
+}
+
+.icon-generalcaretrightmedium:before {
+  content: '\e746';
+}
+
+.icon-generalcaretdownmedium:before {
+  content: '\e747';
+}
+
+.icon-generalcaretleftsmall:before {
+  content: '\e748';
+}
+
+.icon-generalcaretupsmall:before {
+  content: '\e749';
+}
+
+.icon-generalcaretrightsmall:before {
+  content: '\e750';
+}
+
+.icon-generalarrownlarge:before {
+  content: '\e751';
+}
+
+.icon-generalarrowelarge:before {
+  content: '\e752';
+}
+
+.icon-generalarrowslarge:before {
+  content: '\e753';
+}
+
+.icon-generalarrowwsmall:before {
+  content: '\e754';
+}
+
+.icon-generalarrownsmall:before {
+  content: '\e755';
+}
+
+.icon-generalarrowesmall:before {
+  content: '\e756';
+}
+
+.icon-generalxlarge:before {
+  content: '\e757';
+}
+
+.icon-generalpluslarge:before {
+  content: '\e758';
+}
+
+.icon-generalminuslarge:before {
+  content: '\e759';
+}
+
+.icon-generalticklarge:before {
+  content: '\e760';
+}
+
+.icon-generalxsmall:before {
+  content: '\e761';
+}
+
+.icon-generalplussmall:before {
+  content: '\e762';
+}
+
+.icon-generalminussmall:before {
+  content: '\e763';
+}
+
+.icon-generaldislike:before {
+  content: '\e764';
+}
+
+.icon-generallike:before {
+  content: '\e765';
+}
+
+.icon-generalflag:before {
+  content: '\e766';
+}
+
+.icon-generalupload:before {
+  content: '\e767';
+}
+
+.icon-generaldownload:before {
+  content: '\e768';
+}
+
+.icon-generallogin:before {
+  content: '\e769';
+}
+
+.icon-generallogout:before {
+  content: '\e770';
+}
+
+.icon-generalstatslarge:before {
+  content: '\e771';
+}
+
+.icon-generalcollapse:before {
+  content: '\e772';
+}
+
+.icon-generalsort:before {
+  content: '\e773';
+}
+
+.icon-generalclear:before {
+  content: '\e774';
+}
+
+.icon-generallist:before {
+  content: '\e775';
+}
+
+.icon-generalmore:before {
+  content: '\e776';
+}
+
+.icon-generalmenu:before {
+  content: '\e777';
+}
+
+.icon-generalrefresh:before {
+  content: '\e778';
+}
+
+.icon-generalqrcode:before {
+  content: '\e779';
+}
+
+.icon-generalqrcodemini:before {
+  content: '\e780';
+}
+
+.icon-generalsave:before {
+  content: '\e781';
+}
+
+.icon-generalwrite:before {
+  content: '\e782';
+}
+
+.icon-generalbook:before {
+  content: '\e783';
+}
+
+.icon-generalwarning:before {
+  content: '\e784';
+}
+
+.icon-categorypostoffices:before {
+  content: '\e785';
+}
+
+.icon-generaldirections:before {
+  content: '\e786';
+}
+
+.icon-generalprint:before {
+  content: '\e787';
+}
+
+.icon-generalsettingsmini:before {
+  content: '\e788';
+}
+
+.icon-generalrefreshmini:before {
+  content: '\e789';
+}
+
+.icon-generalmenumini:before {
+  content: '\e790';
+}
+
+.icon-generalmoremini:before {
+  content: '\e791';
+}
+
+.icon-generallistmini:before {
+  content: '\e792';
+}
+
+.icon-generalrefinemini:before {
+  content: '\e793';
+}
+
+.icon-generalsortmini:before {
+  content: '\e794';
+}
+
+.icon-generalticksmall:before {
+  content: '\e795';
+}
+
+.icon-generalarrowssmall:before {
+  content: '\e796';
+}
+
+.icon-generalarrowsesmall:before {
+  content: '\e797';
+}
+
+.icon-generalarrowswsmall:before {
+  content: '\e798';
+}
+
+.icon-generalarrownwsmall:before {
+  content: '\e799';
+}
+
+.icon-generalarrownesmall:before {
+  content: '\e800';
+}
+
+.icon-generalarrowselarge:before {
+  content: '\e801';
+}
+
+.icon-generalarrowswlarge:before {
+  content: '\e802';
+}
+
+.icon-generalarrownnelarge:before {
+  content: '\e803';
+}
+
+.icon-generalarrownwlarge:before {
+  content: '\e804';
+}
+
+.icon-generalcaretdownsmall:before {
+  content: '\e805';
+}
+
+.icon-generalsearchmini:before {
+  content: '\e806';
+}
+
+.icon-generalcallmini:before {
+  content: '\e807';
+}
+
+.icon-generalcurrentlocationmini:before {
+  content: '\e808';
+}
+
+.icon-generalpindropmini:before {
+  content: '\e809';
+}
+
+.icon-categoryaboriginalservicesgeneral:before {
+  content: '\e810';
+}
+
+.icon-categoryemergencyand24hourhelp:before {
+  content: '\e811';
+}
+
+.icon-categoryvenues:before {
+  content: '\e812';
+}
+
+.icon-categorycolleges:before {
+  content: '\e813';
+}
+
+.icon-categoryartsandentertainment:before {
+  content: '\e814';
+}
+
+.icon-categoryfishing:before {
+  content: '\e815';
+}
+
+.icon-categoryferries:before {
+  content: '\e816';
+}
+
+.icon-categoryboatmarine:before {
+  content: '\e817';
+}
+
+.icon-categorygardening:before {
+  content: '\e818';
+}
+
+.icon-categoryfencing:before {
+  content: '\e819';
+}
+
+.icon-categorysurveyors:before {
+  content: '\e820';
+}
+
+.icon-categoryfabrication:before {
+  content: '\e821';
+}
+
+.icon-categoryphotography:before {
+  content: '\e822';
+}
+
+.icon-categoryclothing:before {
+  content: '\e823';
+}
+
+.icon-categorydoorsandgates:before {
+  content: '\e824';
+}
+
+.icon-categoryworkwear:before {
+  content: '\e825';
+}
+
+.icon-categorystationerysupplies:before {
+  content: '\e826';
+}
+
+.icon-categoryadvertising:before {
+  content: '\e827';
+}
+
+.icon-categorypools:before {
+  content: '\e828';
+}
+
+.icon-categorycomputers:before {
+  content: '\e829';
+}
+
+.icon-categoryelectricalgoods:before {
+  content: '\e830';
+}
+
+.icon-categorycarsandmotorcycles:before {
+  content: '\e831';
+}
+
+.icon-categorylibraries:before {
+  content: '\e832';
+}
+
+.icon-categoryofficefurniture:before {
+  content: '\e833';
+}
+
+.icon-categorymassmedia:before {
+  content: '\e834';
+}
+
+.icon-categorycounselling:before {
+  content: '\e835';
+}
+
+.icon-categorytransmissionandgearboxes:before {
+  content: '\e836';
+}
+
+.icon-categorylubricantsandoils:before {
+  content: '\e837';
+}
+
+.icon-categorypetrolstations:before {
+  content: '\e838';
+}
+
+.icon-categoryimlookingfor:before {
+  content: '\e839';
+}
+
+.icon-categorypublictransport:before {
+  content: '\e840';
+}
+
+.icon-categoryreligion:before {
+  content: '\e841';
+}
+
+.icon-categoryfitnesscentresandgyms:before {
+  content: '\e842';
+}
+
+.icon-categorycoachesandtrainers:before {
+  content: '\e843';
+}
+
+.icon-categorygarden:before {
+  content: '\e844';
+}
+
+.icon-categorymarine:before {
+  content: '\e845';
+}
+
+.icon-categorycommunitymarkets:before {
+  content: '\e846';
+}
+
+.icon-categoryjewellery:before {
+  content: '\e847';
+}
+
+.icon-categoryfurniture:before {
+  content: '\e848';
+}
+
+.icon-categoryfinancialservices:before {
+  content: '\e849';
+}
+
+.icon-categoryhealthandmedical:before {
+  content: '\e850';
+}
+
+.icon-categoryrenovations:before {
+  content: '\e851';
+}
+
+.icon-categorydental:before {
+  content: '\e852';
+}
+
+.icon-categorycommunity:before {
+  content: '\e853';
+}
+
+.icon-categoryhospitals:before {
+  content: '\e854';
+}
+
+.icon-categorydoctors:before {
+  content: '\e855';
+}
+
+.icon-categoryequipmenthealthandmedical:before {
+  content: '\e856';
+}
+
+.icon-categoryanimals:before {
+  content: '\e857';
+}
+
+.icon-categoryappliancerepairs:before {
+  content: '\e858';
+}
+
+.icon-categorybarsandnightclubs:before {
+  content: '\e859';
+}
+
+.icon-categoryeatanddrink:before {
+  content: '\e860';
+}
+
+.icon-categoryiconwhatson:before {
+  content: '\e861';
+}
+
+.icon-categoryalcoholanddrugservices:before {
+  content: '\e862';
+}

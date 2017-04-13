@@ -1,0 +1,157 @@
+//*==== Colours ====*//
+$purple: #86a2ff;
+$purple_dark: #537bff;
+
+$white: #ffffff;
+$white_lightest: #f9f9f9;
+$white_light: #f1f1f1;
+$white_lighter: #f5f7f8;
+
+$black: #000000;
+$black_light: #494D51;
+
+$grey: #ddd;
+$grey_light: #bdbdbd;
+$grey_lighter: #cfd8dc;
+$grey_darker: #93979B;
+
+$green: #00c853;
+
+$lime: #d2f267;
+
+$red: #ff4742;
+
+$pink: #DA5BAC;
+
+$yellow: #ffc529;
+
+$blue: #2962FF;
+
+$purple_opaque_85: rgba(134, 162, 255, 0.85);
+$blue_opaque_85: rgba(0, 30, 255, 0.85);
+$green_opaque_85: rgba(11, 187, 94, 0.85);
+$yellow_opaque_81: rgba(255, 205, 26, 0.81);
+$white_opaque_94: rgba(255, 255, 255, 0.94);
+$white_opaque_85: rgba(255, 255, 255, 0.85);
+$white_opaque_77: rgba(255, 255, 255, 0.77);
+$white_opaque_50: rgba(255, 255, 255, 0.50);
+$white_opaque_25: rgba(255, 255, 255, 0.25);
+$black_opaque_7: rgba(0, 0, 0, 0.7);
+$black_opaque_5: rgba(0, 0, 0, 0.5);
+$black_opaque_4: rgba(0, 0, 0, 0.4);
+$black_opaque_3: rgba(0, 0, 0, 0.3);
+$black_opaque_2: rgba(0, 0, 0, 0.2);
+$black_opaque_1: rgba(0, 0, 0, 0.1);
+$grey_opaque_65: rgba(80, 80, 80, 0.65);
+$grey_opaque_50: rgba(80, 80, 80, 0.50);
+$grey_opaque_30: rgba(80, 80, 80, 0.30);
+
+$colors: (
+        green: $green,
+        red: $red,
+        grey: $grey,
+        yellow: $yellow,
+        blue: $blue,
+        purple: $purple,
+        white: $white,
+        white-50: $white_opaque_50,
+        black: $black,
+        lime: $lime,
+        pink: $pink,
+        light-grey: $black_opaque_3,
+        black-light: $black_light,
+        black-lighter: rgba(73, 77, 81, 0.65),
+        grey-light: $grey_light,
+        grey-darker: $grey_darker,
+        white-lighter: $white_lighter,
+        white-lightest: $white_lightest
+);
+
+//*==== Media Screens ====*//
+$_screen_xlg: 1500px;
+$_screen_lg: 1200px;
+$_screen_slg: 1024px;
+$_screen_slg-min: 1025px;
+$_screen_xmd: 960px;
+$_screen_md: 840px;
+$_screen_sm: 680px;
+$_screen_xs: 480px;
+$_screen_laptop: 1450px;
+$_screen_tablet: 1024px;
+
+//*==== Image Gallery ====*//
+$gallery_width_default: 140px;
+$gallery_width_default_xs: 140px;
+$gallery_width_default_sm: 160px;
+$gallery_width_default_md: 150px;
+$gallery_width_default_lg: 190px;
+$gallery_bg: $grey_lighter;
+
+//*==== Search ====*//
+$search_bg: #eeeeee;
+
+//*==== Ibox ====*//
+$border-color: #e7eaec; // IBox border
+$ibox-content-bg: #ffffff; // IBox Background content
+
+//*==== Spinner ====*//
+$spin-color: transparent;
+$spin-margin: 0 auto;
+
+//*==== Accordion ====*//
+$horizontal-title-min-width: 140px;
+
+//*==== Vertical Panels ====*//
+$vertical_list_width: 210px;
+$tabbed_vertical_list_width: 300px;
+$tabbed_vertical_list_width-md: 240px;
+
+//*==== Side Nav ====*//
+$light-divider-color: rgba(255, 255, 255, 0.08);
+
+//*==== MD Layouts ====*//
+$md-content-width: 48px;
+$mdl-drawer-width: 300px;
+$mdl-drawer-width-md: 200px;
+
+//*==== MD Inputs ====*//
+$md-input-color: rgba(0, 0, 0, 0.38);
+$md-input-label-color: rgba(0,0,0,0.54);
+
+//*==== MD Textfield ====*//
+$input-input-color: #494D51;
+$input-border-color-active: rgba(76, 78, 79, 0.80);
+$input-border-color: rgba(147, 151, 155, 0.5);
+$input-label-color: rgba(0, 0, 0, .26);
+
+/* GRID */
+
+$grid-desktop-columns: 12 !default;
+$grid-desktop-gutter: 16px !default;
+$grid-desktop-margin: 16px !default;
+
+$grid-header-color: $purple_opaque_85;
+
+$grid-desktop-breakpoint: 1025px !default;
+$grid-desktop-large-breakpoint: 1281px !default;
+$grid-desktop-xlarge-breakpoint: 1367px !default;
+
+$grid-tablet-landscape-columns: 12 !default;
+$grid-tablet-landscape-gutter: 28px !default;
+$grid-tablet-landscape-margin: 28px !default;
+
+$grid-tablet-landscape-breakpoint: 840px !default;
+$grid-tablet-portrait-breakpoint: 768px !default;
+
+$grid-tablet-columns: 8 !default;
+$grid-tablet-gutter: $grid-desktop-gutter !default;
+$grid-tablet-margin: $grid-desktop-margin !default;
+
+$grid-tablet-breakpoint: 480px !default;
+
+$grid-phone-columns: 4 !default;
+$grid-phone-gutter: $grid-desktop-gutter !default;
+$grid-phone-margin: $grid-desktop-margin !default;
+
+$grid-cell-default-columns: $grid-phone-columns !default;
+$grid-max-columns: $grid-desktop-columns !default;
