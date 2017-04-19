@@ -1,13 +1,20 @@
 <section class="weather-heading bg-2 weather-detail-active">
-  <div class="center-xy weather--center weather-details">
+  <div class=" weather--center weather-details">
     <div *ngIf="weather">
-      <h2>{{weather.attributes.suburb}}</h2>
-      <div class="display-flex-stretch weather-forecasts">
-        <article *ngFor="let day of weather.attributes.forecast"
-                 class="flex weather-days">
-          <h3>{{day.day_name}}</h3>
-          <i class="{{day.icon_phrase | weatherIcon}} weather-icon"></i>
-          <div>{{day.icon_phrase}}</div>
+      <div class="weather-detail-suburb">
+        <span class="weather-title">{{weather.attributes.suburb}}</span>
+        <i class="{{weather.attributes.current[0].icon_phrase | weatherIcon}} weather-icon"></i>
+        <span>{{weather.attributes.current[0].icon_phrase}}</span>
+      </div>
+      <div class="weather-forecasts">
+        <article *ngFor="let day of weather.attributes.forecast; let i = index"
+                 class="flex weather-days weather-days-{{i}}">
+          <div class="weather-day-content">
+            <h3>{{day.day_name}}</h3>
+            <i class="{{day.icon_phrase | weatherIcon}} weather-icon"></i>
+            <div>{{day.icon_phrase}}</div>
+          </div>
+          <span class="bg-overlay"></span>
 
         </article>
       </div>

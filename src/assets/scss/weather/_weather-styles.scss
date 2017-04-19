@@ -8,17 +8,17 @@
   display: block;
   background-size: cover;
   &.bg-1 {
-    background: url("#{$get-path-to-images}/weather/sun.jpg") no-repeat center;
+    background: url("#{$get-path-to-images}/weather/sun.jpg") no-repeat center fixed;
   }
   &.bg-2 {
-    background: url("#{$get-path-to-images}/weather/cloud.jpg") no-repeat center;
+    height: auto;
+    background: url("#{$get-path-to-images}/weather/cloud.jpg") no-repeat center fixed;
   }
 }
 
 .weather--center {
   width: 100%;
 }
-
 
 //mdl override
 .mdl-textfield--white {
@@ -32,28 +32,92 @@
   }
 }
 
-//
-//.weather-detail-active {
-//  transform: scale(1.1);
-//}
-//.weather-detail-inactive {
-//  transform: scale(1);
-//}
-
 .weather-forecasts {
   @include background-opacity($black, 0.4);
   color: $white;
-  padding: 15px 30px;
 }
 
+$days-colors: (
+  0: $green,
+  1: $purple,
+  2: $pink,
+  3: $yellow,
+  4: $blue,
+  5: $red,
+  6: $lime
+);
+
+
+$days-bg: (
+  0: "#{$get-path-to-images}/weather/shower.jpg",
+  1: "#{$get-path-to-images}/weather/sunny.jpg",
+  2: "#{$get-path-to-images}/weather/shower2.jpg",
+  3: "#{$get-path-to-images}/weather/sunny2.jpg",
+  4: "#{$get-path-to-images}/weather/shower3.jpg",
+  5: "#{$get-path-to-images}/weather/sunny3.jpg",
+  6: "#{$get-path-to-images}/weather/shower.jpg"
+);
+
+
 .weather-days {
+  padding: 15px 30px;
+  position: relative;
+  @each $dayno, $daycolor in $days-colors {
+    &.weather-days-#{$dayno} {
+      @include background-opacity($daycolor, 0.4);
+    }
+  }
+  @each $dayno, $daybg in $days-bg {
+    &.weather-days-#{$dayno} {
+      background-size: cover !important;
+      background: url("#{$daybg}") no-repeat center top;
+    }
+  }
+
+  .weather-day-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include background-opacity($black, 0.4);
+  }
+
 
 }
 
 .weather-details {
   text-align: center;
-  h2 {
-    color: $black;
+  .weather-detail-suburb {
+    color: $white;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.27);
+    @include background-opacity($white, 0.2);
+    position: relative;
+    overflow: hidden;
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    > * {
+      @include align-self(vertical-align);
+    }
+    .weather-title {
+      font-size: 40px;
+    }
+    .weather-icon {
+      display: block;
+      margin-top: 30px;
+      font-size: 100px !important;
+    }
   }
   h3 {
     color: $yellow;
