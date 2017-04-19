@@ -14,9 +14,7 @@ import { WeatherDetailComponent }      from './weather/weather-detail.component'
 import { AppRoutingModule }     from './app-routing.module';
 import { WeatherService } from './weather/weather.service';
 
-
-// other imports
-// import { MaterialModule } from '@angular/material';
+import { WeatherIconPipe }    from './components/weather-icon.pipe';
 
 @NgModule({
   imports: [
@@ -31,7 +29,8 @@ import { WeatherService } from './weather/weather.service';
     AppComponent,
     HomeComponent,
     WeatherComponent,
-    WeatherDetailComponent
+    WeatherDetailComponent,
+    WeatherIconPipe
   ],
   providers: [ WeatherService ],
   bootstrap: [ AppComponent ]

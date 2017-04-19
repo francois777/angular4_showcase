@@ -1,13 +1,14 @@
 <section class="weather-heading bg-2 weather-detail-active">
-  <div class="center-xy weather--center">
+  <div class="center-xy weather--center weather-details">
     <div *ngIf="weather">
-      <h2>{{weather.attributes.suburb}} Weather!</h2>
-
+      <h2>{{weather.attributes.suburb}}</h2>
       <div class="display-flex-stretch weather-forecasts">
         <article *ngFor="let day of weather.attributes.forecast"
                  class="flex weather-days">
-          <div>{{day.day_name}}</div>
+          <h3>{{day.day_name}}</h3>
+          <i class="{{day.icon_phrase | weatherIcon}} weather-icon"></i>
           <div>{{day.icon_phrase}}</div>
+
         </article>
       </div>
 

@@ -49,3 +49,16 @@
 .weather-days {
 
 }
+
+.weather-details {
+  text-align: center;
+  h2 {
+    color: $black;
+  }
+  h3 {
+    color: $yellow;
+  }
+  .weather-icon {
+    font-size: 40px !important;
+  }
+}
