@@ -1,6 +1,13 @@
+//Font Path
+$get-path-to-fonts: '../../assets/fonts';
+$get-path-to-images: '../../assets/images';
+
 @import 'variables';
-@import 'base';
 
 @import 'fonts/fonts';
 @import 'icons/icons';
 @import 'mixins/mixins';
+
+@import 'base';
+@import 'components/components';
+@import 'weather/weather';

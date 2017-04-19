@@ -1,14 +1,14 @@
-<h2>My Weather</h2>
-<ul class="weather">
-  <li *ngFor="let weather of weather"
-    [class.selected]="weather === selectedWeather"
-    (click)="onSelect(weather)">
-    <span class="badge">{{weather.id}}</span> {{weather.attributes.suburb}}
-  </li>
-</ul>
-<div *ngIf="selectedWeather">
-  <h2>
-    {{selectedWeather.name | uppercase}} is my weather
-  </h2>
-  <button (click)="gotoDetail()">View Details</button>
-</div>
+<section class="weather-heading bg-1">
+  <div class="center-xy">
+    <div class="mdl-textfield mdl-textfield--white">
+      <input class="mdl-textfield__input"
+             type="text"
+             (keyup.enter)="searchWeather(currentSuburb)"
+             [(ngModel)]="currentSuburb">
+      <label class="mdl-button mdl-button--icon"
+             (click)="searchWeather(currentSuburb)">
+        <i class="icon-generalcurrentlocationlarge"></i>
+      </label>
+    </div>
+  </div>
+</section>

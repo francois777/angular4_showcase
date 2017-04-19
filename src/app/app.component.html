@@ -1,5 +1,13 @@
 <nav class="top-navigation">
-  <a routerLink="/" routerLinkActive="active">Home</a>
-  <a routerLink="/weather" routerLinkActive="active">Weather</a>
+  <div class="display-flex-stretch flex-justify-content-space-between">
+
+    <div flex-spacer class="left-nav-icon"><a routerLink="/" routerLinkActive="active"><i
+      class="icon-categoryhomeservices"></i></a></div>
+    <div flex-spacer><a routerLink="/" routerLinkActive="active">Weather</a></div>
+    <div flex-spacer class="right-nav-icon">
+      <a><i class="icon-generalrefresh"></i></a>
+    </div>
+
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet [@routerAnimation]="myOutlet.state" #myOutlet class="route-outlet"></router-outlet>

@@ -1,7 +1,9 @@
 import {Weather} from './weather';
-import {WEATHERS} from './mock-weather';
 import {Injectable} from '@angular/core';
-import {Http, URLSearchParams} from '@angular/http';
+import {Http} from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class WeatherService {
@@ -10,22 +12,17 @@ export class WeatherService {
   constructor(private http: Http) {
   }
 
-  getWeathers(): Promise<Weather[]> {
-    console.log('WEATHERS MOCK', WEATHERS)
-    return Promise.resolve(WEATHERS);
+  getWeather(suburb: string): Promise<Weather> {
+    const url = `${this.weatherAPI}/?filter[suburb]=${suburb}`;
+    return this.http.get(url)
+      .toPromise()
+      .then(response => response.json().data[0] as Weather)
+      .catch(this.handleError);
   }
 
-  getWeathersSlowly(): Promise<Weather[]> {
-    return new Promise(resolve => {
-      // Simulate server latency with 2 second delay
-      setTimeout(() => resolve(this.getWeathers()), 2000);
-    });
+  private handleError(error: any): Promise<any> {
+    console.error('An error occurred', error); // for demo purposes only
+    return Promise.reject(error.message || error);
   }
-
-  //
-  // getWeather(suburb: string): Promise<Weather> {
-  //   return this.http
-  //     .get(this.weatherAPI + '?filter[suburb]=' + suburb);
-  // }
 
 }

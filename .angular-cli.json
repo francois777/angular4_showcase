@@ -20,13 +20,9 @@
       "prefix": "app",
       "styles": [
         "bower_components/angular-material/angular-material.scss",
+        "bower_components/material-design-lite/src/material-design-lite.scss",
         "assets/scss/app.scss"
       ],
-      "stylePreprocessorOptions": {
-        "includePaths": [
-          "bower_components/angular-material/angular-material.scss"
-        ]
-      },
       "scripts": []
     }
   ],

@@ -1,0 +1,40 @@
+
+.display-inline-flex {
+  @include inline-flex();
+}
+
+.display-flex {
+  @include flexbox();
+  &.display-flex-vertical {
+    @include flex-direction(column);
+  }
+  &.display-flex-wrap {
+    @include flex-wrap(wrap);
+  }
+}
+
+.display-flex-stretch {
+  @include flexbox();
+  @include flex-flow(row wrap);
+  @include align-items(stretch);
+  margin: 0 auto;
+}
+
+.display-flex-center {
+  @include flexbox();
+  @include align-items(center);
+}
+
+.flex-spacer {
+  @include flex-grow(1);
+}
+
+.flex-column {
+  @include flex(1);
+}
+
+.flex-justify-content-space-between {
+  @include justify-content(space-between);
+}
+
+

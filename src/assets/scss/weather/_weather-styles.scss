@@ -1,0 +1,51 @@
+//Weather
+.weather-heading {
+  position: relative;
+  padding-top: 50px;
+  height: 900px;
+  min-height: 100%;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  &.bg-1 {
+    background: url("#{$get-path-to-images}/weather/sun.jpg") no-repeat center;
+  }
+  &.bg-2 {
+    background: url("#{$get-path-to-images}/weather/cloud.jpg") no-repeat center;
+  }
+}
+
+.weather--center {
+  width: 100%;
+}
+
+
+//mdl override
+.mdl-textfield--white {
+  color: $white;
+  padding-right: 30px;
+  .mdl-textfield__input {
+    border-bottom-color: $white;
+  }
+  .mdl-button {
+    right: 0;
+  }
+}
+
+//
+//.weather-detail-active {
+//  transform: scale(1.1);
+//}
+//.weather-detail-inactive {
+//  transform: scale(1);
+//}
+
+.weather-forecasts {
+  @include background-opacity($black, 0.4);
+  color: $white;
+  padding: 15px 30px;
+}
+
+.weather-days {
+
+}
